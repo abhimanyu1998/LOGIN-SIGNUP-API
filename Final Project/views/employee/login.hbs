@@ -1,0 +1,21 @@
+<h3>{{viewTitle}}</h3>
+
+
+<form action="/employee/loggedin" method="POST" autocomplete="off">
+
+    <div class="form-group " style="width:60%;">
+        <label>Full Name</label>
+        <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{employee.fullName}}">
+        <div class="text-danger">
+            {{employee.fullNameError}}</div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group " style="width:60%;">
+            <label>Mobile</label>
+            <input type="text" class="form-control" name="mobile" placeholder="Mobile" value="{{employee.mobile}}">
+            <div class="text-danger"> {{employee.mobileError}}</div>
+    <input class="btn btn-secondary" style="font-size:20px; background-color:#0066ff; margin-top:20px;margin-left:400px;" type="submit" value="Login">
+        
+        </div>
+      </form>
